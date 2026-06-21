@@ -42,7 +42,7 @@ public class array {
         for(int i =0; i<n ; i++){
             arr[i] = scan.nextInt();
         }
-        //print using for loop
+        //print using for loop printing
         for(int i=0 ; i<n ; i++){
             System.out.println("Position at "+ i + " : " + arr[i]);
         }
