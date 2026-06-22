@@ -25,15 +25,21 @@ public class array {
 }
 
 // java array get input String types 
-class string {
+class Arraystring {
     public static void main(String[] args) {
         Scanner scam = new Scanner(System.in);
         System.out.println("Enter your array size:");
         int n = scam.nextInt();
+        scam.nextLine();
         String[] arra = new String[n];
         System.out.println("Enter your strings:");
         for(int i =0; i<n ; i++){
-            
+            arra[i] = scam.nextLine();
+
+        }
+        //print all values using for loop
+        for(int i = 0 ; i<n ; i++){
+            System.out.println(arra[i]);
         }
     }
 
