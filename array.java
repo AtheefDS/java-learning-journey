@@ -66,8 +66,23 @@ class Arraystring {
         for(int i = 0; i < 10; i++) {
             System.out.println(arr1[i]);
         }
+
+
+        
     }
     
 }
+// create 2 table 
+class secondarray {
+            public static void main(String[] args) {
+                Scanner first = new Scanner(System.in);
+                
+                //product table
+                for(int i = 1 ; i<=10 ; i++){
+                    System.out.println("2 * " +  i  + " = " + 2 * i );
+                }
+            }
+            
+        }
 
 
