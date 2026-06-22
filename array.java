@@ -86,3 +86,25 @@ class secondarray {
         }
 
 
+        //Find middle element in the array
+
+         class Third {
+            public static void main(String[] args) {
+                Scanner ath = new Scanner(System.in);
+                System.out.println("Enter your array size: ");
+                int n = ath.nextInt();
+                int[] arr = new int[n];
+                System.out.println("Enter your array elements: ");
+                for(int i = 0 ; i < n  ; i++){
+                    arr[i] = ath.nextInt();
+                }
+                for(int i = 0 ; i < n  ; i++){
+                    System.out.println(arr[i]);
+                }
+                int middle = arr[n/2];
+                System.out.print("middle is " + n/2 + " :" + middle);
+            }
+            
+        }
+
+
