@@ -47,3 +47,27 @@ class Arraystring {
 }
 
 
+//print numbers arrya and for loop
+ class Numarray {
+
+    public static void main(String[] args) {
+        Scanner second = new Scanner(System.in);
+        System.out.println("Enter your array size: ");
+        int n = second.nextInt();
+        System.out.println("Enter your first position number: ");
+        int[] arr1 = new int[n];
+        arr1[0] = second.nextInt();
+         for(int i = 1; i < 10; i++) {
+            arr1[i] = arr1[i-1] + 1;
+        }
+
+        System.out.println("Array numbers:");
+
+        for(int i = 0; i < 10; i++) {
+            System.out.println(arr1[i]);
+        }
+    }
+    
+}
+
+
