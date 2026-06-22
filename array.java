@@ -24,4 +24,20 @@ public class array {
     }
 }
 
+// java array get input String types 
+class string {
+    public static void main(String[] args) {
+        Scanner scam = new Scanner(System.in);
+        System.out.println("Enter your array size:");
+        int n = scam.nextInt();
+        String[] arra = new String[n];
+        System.out.println("Enter your strings:");
+        for(int i =0; i<n ; i++){
+            
+        }
+    }
+
+    
+}
+
 
