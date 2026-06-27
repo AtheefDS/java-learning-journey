@@ -15,3 +15,26 @@ public class lab1 {
         System.out.println(c1);
     }
 }
+
+//find average 
+class average {
+
+    float avg(int p,int q,int r){
+        int sum = p+q+r;
+            return ((sum)/3);
+        }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        average obj = new average();
+        int x = 10;
+        int y = 5;
+        int z = 15;
+
+        float result= obj.avg(x,y,z);
+        System.out.println(result);
+
+        
+        
+
+    }
+}
