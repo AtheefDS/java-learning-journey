@@ -38,3 +38,23 @@ class average {
 
     }
 }
+
+//data type convert
+/**
+ * Innerlab1
+ */
+class cast {
+
+    public static void main(String[] args) {
+        Scanner three = new Scanner(System.in);
+        int x =5;
+        float y = 10.5f;
+        System.out.println((double)x);
+        System.out.println((long)x);
+        System.out.println((float)x);
+        System.out.println((float)(long)x);
+        System.out.println((int)y);
+        System.out.println((long)y);
+
+    }
+}
