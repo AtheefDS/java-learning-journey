@@ -58,3 +58,44 @@ class cast {
 
     }
 }
+
+
+//work with triangle
+ class  triangle{
+
+    double findArea(double b , double h){
+        return .5f*b*h;
+    }
+
+    float findHypotenuse(double a , double c){
+        return (int)Math.sqrt(a*a+ c*c);
+    }
+
+    double perimeter(double a , double b , float c){
+        return a+b+c;
+    }
+
+    
+
+    public static void main(String[] args) {
+        double base=3.0;
+        double height=4.0;
+        double hypotenuse;
+       
+        triangle t1 = new triangle();
+
+        double p = t1.findArea(base, height);
+        System.out.println(p);
+         
+        float c =  t1.findHypotenuse(base , height);
+        System.out.println(c);
+
+        double g = t1.perimeter(base , height , t1.findHypotenuse(base , height) );
+        System.out.println(g);
+
+
+
+
+   
+    }
+}
