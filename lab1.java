@@ -115,5 +115,12 @@ class swap{
         //we already defined variable y so above if you defined variable y again compilar error 
        System.out.println("x= " +x);
        System.out.println("y= " +y);
+
+       //now we swap after swapping values for x and y 
+       int z = x;
+       x=y;
+       y=z;
+       System.out.println(x);
+       System.out.println(y);
     }
 }
