@@ -124,3 +124,19 @@ class swap{
        System.out.println(y);
     }
 }
+
+//alternative method for aboe swap
+class swapex{
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 5;
+        System.out.println(x);
+        System.out.println(y);
+        x = x+y;
+        y = x-y;
+        x = x-y;
+        //print after swapping
+        System.out.println(x);
+        System.out.println(y);
+    }
+} 
