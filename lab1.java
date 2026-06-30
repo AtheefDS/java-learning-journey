@@ -140,3 +140,53 @@ class swapex{
         System.out.println(y);
     }
 } 
+
+class calculator{
+     int num1 ;
+    int num2;
+    int addition(int x ,int y){
+        return x+y;
+    }
+
+    int subtraction(int x , int y){
+        return x - y ;
+    }
+
+    int multiplication(int x , int y){
+        return x * y;
+    }
+
+    float division (int x , int y){
+        return x/y;
+    }
+
+    int modulus(int x , int y){
+        return x % y ;
+    }
+    }
+    /**
+     * Innerlab1
+     */
+     class demo {
+        public static void main(String[] args) {
+            calculator c1 = new calculator();
+            c1.num1 = 12;
+            c1.num2 = 5;
+            int a =c1.addition(c1.num1, c1.num2);
+            System.out.println(a);
+
+            int b = c1.subtraction(c1.num1, c1.num2);
+            System.out.println(b);
+
+            int c = c1.multiplication(c1.num1, c1.num2);
+            System.out.println(c);
+
+            float d = c1.division(c1.num1, c1.num2);
+            System.out.println(d);
+
+            int e = c1.modulus(c1.num1, c1.num2);
+            System.out.println(e);
+    }
+        
+    }
+    
