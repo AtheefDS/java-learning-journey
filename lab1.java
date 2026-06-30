@@ -99,3 +99,21 @@ class cast {
    
     }
 }
+
+//learn swap with java
+class swap{
+    public static void main(String[] args) {
+       
+        int x = 15;
+        int y = 5;
+        System.out.println(x);
+        System.out.println(y);
+       //after swaping
+       int temp =x;
+       x=y;
+        y = temp;
+        //we already defined variable y so above if you defined variable y again compilar error 
+       System.out.println("x= " +x);
+       System.out.println("y= " +y);
+    }
+}
