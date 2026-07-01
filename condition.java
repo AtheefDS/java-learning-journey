@@ -45,3 +45,28 @@ class alphabet{
 
     }
 }
+
+//identyfy the triangle type
+class triangle{
+    public static void main(String[] args) {
+        Scanner q3 = new Scanner(System.in);
+        System.out.println("Enter your triangle side1 length:");
+        int side1 = q3.nextInt();
+        System.out.println("Enter your triangle side2 length:");
+        int side2 = q3.nextInt();
+        System.out.println("Enter your triangle side3 length:");
+        int side3 = q3.nextInt();
+        if((side1==side2) && side1==side3){
+            System.out.println("Equilateral Triangle");
+        }
+        else if((side1!=side2) && (side1!=side3) && (side2!=side3)){
+            System.out.println("Isosceles triangle");
+        }
+        else if((side1==side2) && side1!=side3){
+            System.out.println("Scalene triangle");
+        }
+        else{
+            System.out.println("Not triangle");
+        }
+    }
+}
