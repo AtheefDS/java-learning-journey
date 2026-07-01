@@ -93,3 +93,19 @@ class energy{
         System.out.println("Total amount is " + amount);
     }
 }
+
+// Enter the number printed only negative number
+class negative{
+    public static void main(String[] args) {
+        Scanner q5 = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int x = q5.nextInt();
+        if(x<0){
+            System.out.println(x);
+
+        }
+        else {
+            System.out.println("- " + x);
+        }
+    }
+}
