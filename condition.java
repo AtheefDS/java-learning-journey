@@ -70,3 +70,26 @@ class triangle{
         }
     }
 }
+
+//calculate like electricity bill 
+class energy{
+    public static void main(String[] args) {
+        Scanner q4 = new Scanner(System.in);
+        System.out.println("Enter your meter reading:");
+        float x = q4.nextFloat();
+        float amount = 0;
+        if(x==0 || x<100){
+           amount = x * 1.5f;
+        }
+        else if(x==100 || x<200){
+           amount = 100 * 1.5f + (x-100)*2.5f;
+        }
+         else if(x==200 || x<500){
+           amount = 100 * 1.5f + 100 * 2.5f + (x-200) * 3.5f ;
+        }
+        else{
+            System.out.println("Enter valid energy amount");
+        }
+        System.out.println("Total amount is " + amount);
+    }
+}
