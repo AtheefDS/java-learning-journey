@@ -147,3 +147,22 @@ class compare{
         }
     }
 }
+
+class identyfy{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a = scan.nextInt();
+        //put the condition for identyfy the number type
+        if(a<0){
+            System.out.println("Negative number");
+        }
+        else if(a>0){
+            System.out.println("Positive number");
+        }
+        else if(a==0){
+            System.out.println("a is zero");
+        }
+        
+    }
+}
