@@ -124,3 +124,26 @@ class check{
         }
     }
 }
+
+class compare{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter two numbers:");
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+
+        //compare two numbers with using conditions 
+        if(a==b){
+            System.out.println("Equal numbers");
+        }
+        else if(a>b){
+            System.out.println("a greater than b");
+        }
+        else if(a<b){
+            System.out.println("a lessthan b");
+        }
+        else{
+            System.out.println("Enter the correct numbers");
+        }
+    }
+}
