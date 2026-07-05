@@ -109,3 +109,18 @@ class negative{
         }
     }
 }
+
+class check{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int a = scan.nextInt();
+        //check wheather the number odd or even
+        if(a%2==0){
+            System.out.println("Even number");
+        }
+        else{
+            System.out.println("Odd number");
+        }
+    }
+}
