@@ -222,3 +222,23 @@ class week{
 
     }
 }
+
+// check gain or loss
+class decide{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your cost price:");
+        int cost = scan.nextInt();
+        System.out.println("Enter your selling price:");
+        int sell = scan.nextInt();
+        if(cost>sell){
+            System.out.println("Your business loss");
+        }
+        else if(cost<sell){
+            System.out.println("Your business gain smoothly");
+        }
+        else{
+            System.out.println("Enter your correct selling and costing prices");
+        }
+    }
+}
