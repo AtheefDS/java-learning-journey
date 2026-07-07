@@ -258,3 +258,23 @@ class find{
         }
     }
 }
+
+class fine{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your speed");
+        int speed = scan.nextInt();
+        if(speed>=31 && speed<=40){
+            System.out.println("You want to pay 50 pounds");
+        }
+        else if(speed>=41 && speed<=50){
+            System.out.println("Your want to pay 75 pounds");
+        }
+        else if(speed>50){
+            System.out.println("You want to pay 100 pounds");
+        }
+        else{
+            System.out.println("You do not need pay for your speed");
+        }
+    }
+}
