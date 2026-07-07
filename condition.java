@@ -242,3 +242,19 @@ class decide{
         }
     }
 }
+// check enter the first number divisible the enter the second number
+class find{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the first number:");
+        int first = scan.nextInt();
+        System.out.println("Enter the second number:");
+        int second = scan.nextInt();
+        if(first%second==0){
+            System.err.println("The first number can divisibe by the second number");
+        }
+        else{
+            System.out.println("The first number cannot divisible by the second number");
+        }
+    }
+}
