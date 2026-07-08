@@ -278,3 +278,24 @@ class fine{
         }
     }
 }
+
+class discount{
+    public static void main(String[] args) {
+        Scanner san = new Scanner(System.in);
+        System.out.println("Enter your purchese amount: ");
+        int total = san.nextInt();
+        float discount =0;
+        System.out.println("Show your discount amount");
+        if(total>5000){
+            discount = total * 0.15f;
+            System.out.println(discount);
+        } 
+        else{
+            discount = total * 0.1f;
+            System.out.println(discount);
+        }
+        System.out.println("Your final pay amount");
+        float sub = total - discount;
+        System.out.println(sub);
+    }
+}
