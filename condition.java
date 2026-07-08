@@ -299,3 +299,30 @@ class discount{
         System.out.println(sub);
     }
 }
+
+class elctricity{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your electricity unit:");
+        int unit = scan.nextInt();
+        float total = 0;
+        System.out.println("Your final electricity amount:");
+        if(unit<=50){
+            total = 50 * 0.5f;
+            System.out.println(total);
+        }
+        else if(unit <= 150){
+            total = 50 * 0.5f + (unit - 50) * 0.75f ;
+            System.out.println(total);
+        }
+        else if(unit <= 250){
+            total = 50 * 0.5f + 100 * 0.75f + (unit - 150) * 1.2f;
+            System.out.println(total);
+        }
+        else if(unit>250){
+            total = 50 * 0.5f + 100 * 0.75f + 100 *1.2f + (unit-250)*1.5f;
+            System.out.println(total);
+        }
+
+    }
+}
