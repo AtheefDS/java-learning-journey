@@ -326,3 +326,51 @@ class elctricity{
 
     }
 }
+
+
+class arithmetic{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter two integers for arithmetic work");
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        scan.nextLine();
+        System.out.println("Enter your function");
+        String ent = scan.nextLine();
+        if(ent.equals("addition")){
+            System.out.println(a+b);
+        }
+        else if(ent.equals("subtraction")){
+            System.out.println(a-b);
+        }
+        else if(ent.equals("division")){
+            System.out.println((float)a/b);
+        }
+        else if(ent.equals("multiplication")){
+            System.out.println(a*b);
+        }
+    }
+}
+
+class area{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter you shape");
+        String shape = scan.nextLine();
+        if(shape.equals("circle")){
+            int r = scan.nextInt();
+            float pi = 3.14f;
+            System.out.println(pi *r *r);
+        }
+        else if(shape.equals("triangle")){
+            int d = scan.nextInt();
+            int h = scan.nextInt();
+            System.out.println(0.5f*d*h);
+        }
+        else if(shape.equals("rectangle")){
+            int e = scan.nextInt();
+            int f = scan.nextInt();
+            System.out.println(e*f);
+        }
+    }
+}
