@@ -40,3 +40,48 @@ class student {
 
     }
 }
+
+
+
+
+class Triangle {
+
+    int a;
+    int b;
+    int c;
+
+    String triangleChecker(int x, int y, int z) {
+        if (x + y > z && y + z > x && z + x > y) {
+            return "Yes, This is a triangle";
+        } else {
+            return "No, This is not a triangle";
+        }
+    }
+
+    int getPerimeter() {
+        if (triangleChecker(a, b, c).equals("Yes, This is a triangle")) {
+            return a + b + c;
+        }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        Triangle t = new Triangle();
+
+        t.a = scan.nextInt();
+        t.b = scan.nextInt();
+        t.c = scan.nextInt();
+
+        String result = t.triangleChecker(t.a, t.b, t.c);
+        System.out.println(result);
+
+        if (t.getPerimeter() != 0) {
+            System.out.println("Perimeter = " + t.getPerimeter());
+        }
+
+        scan.close();
+    }
+}
