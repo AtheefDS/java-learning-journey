@@ -89,25 +89,108 @@ class Triangle {
 
 
 //Question 3
+
+
 class GradeGenerator {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter student mark:");
-        int mark = scan.nextInt();
-        if(mark>=75 && mark<=100){
-            System.out.println("A");
-        }
-        else if(mark<75 && mark>=65){
-            System.out.println("B");
-        }
-        else if(mark<65 && mark>=55){
-            System.out.println("C");
-        }
-        else if(mark<55){
+
+    // Method to display grade
+    public static void checkGrade(int mark) {
+        if (mark < 0 || mark > 100) {
+            System.out.println("Marks should be in range 0-100");
+        } else if (mark >= 75) {
+            System.out.println("Grade for the subject : A");
+        } else if (mark >= 65) {
+            System.out.println("Grade for the subject : B");
+        } else if (mark >= 55) {
+            System.out.println("Grade for the subject : C");
+        } else {
             System.out.println("Subject Fail");
         }
-        else{
-            System.out.println("marks should be in range 0-100");
+    }
+
+    // Method to check positive numbers
+    public static void checkPositive(int x, int y) {
+        if (x > 0 && y > 0) {
+            System.out.println("X and Y are positive numbers");
+        } else {
+            System.out.println("X and Y are not positive numbers");
         }
+    }
+
+    // Method to check difference
+    public static void checkDifference(int x, int y) {
+        if ((x - y) > 0) {
+            System.out.println("Difference between X and Y is a positive number");
+        } else {
+            System.out.println("Difference between X and Y is not a positive number");
+        }
+    }
+
+    // Method to check Y range
+    public static void checkRange(int y) {
+        if (y >= 20 && y <= 50) {
+            System.out.println("Y is between 20 and 50");
+        } else {
+            System.out.println("Y is not in range 20-50");
+        }
+    }
+
+    // Method to check whether Y is a 3-digit number using a loop
+    public static void checkThreeDigit(int y) {
+        int temp = Math.abs(y);
+        int count = 0;
+
+        if (temp == 0) {
+            count = 1;
+        } else {
+            while (temp > 0) {
+                count++;
+                temp = temp / 10;
+            }
+        }
+
+        if (count == 3) {
+            System.out.println("Y is a 3-digit number");
+        } else {
+            System.out.println("Y is not a 3-digit number");
+        }
+    }
+
+    // Method to check odd numbers
+    public static void checkOdd(int x, int y) {
+        if (x % 2 != 0 && y % 2 != 0) {
+            System.out.println("Both X and Y are odd numbers");
+        } else {
+            System.out.println("Both X and Y are not odd numbers");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        // Student marks
+        System.out.print("Enter Student Subject Marks: ");
+        int mark = scan.nextInt();
+
+        System.out.println("Student Marks for Subject: " + mark);
+        checkGrade(mark);
+
+        // X and Y values
+        System.out.print("\nEnter X value: ");
+        int x = scan.nextInt();
+
+        System.out.print("Enter Y value: ");
+        int y = scan.nextInt();
+
+        System.out.println();
+
+        checkPositive(x, y);
+        checkDifference(x, y);
+        checkRange(y);
+        checkThreeDigit(y);
+        checkOdd(x, y);
+
+        scan.close();
     }
 }
