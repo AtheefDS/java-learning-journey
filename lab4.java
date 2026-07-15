@@ -194,3 +194,17 @@ class GradeGenerator {
         scan.close();
     }
 }
+
+//Question 4
+class  MaxMinGenerator{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter ten inputs:");
+        int n = 10 ;
+        int[] arr = new int[n];
+        for(int i = 0 ; i<10 ; i++){
+            System.out.print("Enter number " + (i + 1) + ": ");
+            arr[i] = scan.nextInt();
+        }
+    }
+}
