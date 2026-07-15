@@ -201,10 +201,26 @@ class  MaxMinGenerator{
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter ten inputs:");
         int n = 10 ;
+
         int[] arr = new int[n];
+
+         int max = arr[0];
+        int min = arr[0];
         for(int i = 0 ; i<10 ; i++){
             System.out.print("Enter number " + (i + 1) + ": ");
             arr[i] = scan.nextInt();
+
+
+             if (arr[i] > max) {
+                max = arr[i];
+            }
+
+            // Check for minimum
+            if (arr[i] < min) {
+                min = arr[i];
+            }
         }
+         System.out.println("\nMaximum Number: " + max);
+        System.out.println("Minimum Number: " + min);
     }
 }
