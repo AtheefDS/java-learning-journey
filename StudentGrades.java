@@ -226,9 +226,59 @@ class  MaxMinGenerator{
 }
 
 //question 5
-class StudentGrades{
+
+
+public class StudentGrades {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-        
+
+        int mark;
+        int totalSubjects = 0;
+        int passSubjects = 0;
+        int failSubjects = 0;
+        int totalMarks = 0;
+        double average = 0;
+
+        System.out.println("Enter subject marks (-1 to stop):");
+
+        while (true) {
+            System.out.print("Enter mark: ");
+            mark = scan.nextInt();
+
+            // Stop if user enters -1
+            if (mark == -1) {
+                break;
+            }
+
+            // Validate mark
+            if (mark < 0 || mark > 100) {
+                System.out.println("Invalid mark! Please enter a mark between 0 and 100.");
+                continue;
+            }
+
+            totalSubjects++;
+            totalMarks += mark;
+
+            if (mark >= 50) {
+                passSubjects++;
+            } else {
+                failSubjects++;
+            }
+        }
+
+        // Calculate average
+        if (totalSubjects > 0) {
+            average = (double) totalMarks / totalSubjects;
+        }
+
+        // Display results
+        System.out.println("\n----- Result -----");
+        System.out.println("Total Subjects : " + totalSubjects);
+        System.out.println("Pass Subjects  : " + passSubjects);
+        System.out.println("Fail Subjects  : " + failSubjects);
+        System.out.printf("Average Marks  : %.2f\n", average);
+
+        scan.close();
     }
 }
