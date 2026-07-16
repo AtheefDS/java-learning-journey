@@ -224,3 +224,11 @@ class  MaxMinGenerator{
         System.out.println("Minimum Number: " + min);
     }
 }
+
+//question 5
+class StudentGrades{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+    }
+}
