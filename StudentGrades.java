@@ -282,3 +282,5 @@ public class StudentGrades {
         scan.close();
     }
 }
+
+//question 7
