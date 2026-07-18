@@ -36,12 +36,15 @@ class ex3{
     }
 }
 
-class ex4{
+
+
+class ex5{
     public static void main(String[] args) {
+
         int i,j;
-        for( ; i<=5 ; i++){
-            System.out.println(i);
-           
-        }
+        for (i = 1, j = 0; i <= 5 && j < 3; i++ ) {
+            // Concatenated the integers into a readable string
+            System.out.println(i + " " + j); 
+        } 
     }
 }
