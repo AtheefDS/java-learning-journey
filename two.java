@@ -75,16 +75,28 @@ class school{
     }
 }
 
-class sisya{
-    void display(){
+class sisya {
+    void display() {
         String name = "Atheef";
         int age = 23;
 
         System.out.println(name);
         System.out.println(age);
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         student s1 = new student();
         s1.display();
     }
 }
+class teacher{
+        String name;
+        void displayName(){
+            System.out.println("Name : " + name);
+        }
+        public static void main(String[] args){
+            teacher t1 = new teacher();
+            t1.name = "Atheef";
+            t1.displayName();
+        }
+    }
