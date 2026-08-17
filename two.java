@@ -74,3 +74,17 @@ class school{
         System.out.println(school.university);
     }
 }
+
+class sisya{
+    void display(){
+        String name = "Atheef";
+        int age = 23;
+
+        System.out.println(name);
+        System.out.println(age);
+    }
+    public static void main(String[] args){
+        student s1 = new student();
+        s1.display();
+    }
+}
