@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class temperature{
+/*class temperature{
     public static  void main(String[] args){
         Scanner scan = new Scanner(System.in);
         double fahrenheit = 212;
@@ -100,3 +100,32 @@ class teacher{
             t1.displayName();
         }
     }
+
+ */
+
+import java.util.Scanner;
+class triangle{
+    double height;
+    double base;
+    double hypotenuse;
+    void  findArea(){
+        System.out.println(0.5*height*base);
+    }
+    void findHypotenuse(){
+        System.out.println(base*base + height*height);
+    }
+    void findPerimeter(){
+        System.out.println(Math.sqrt(base*base + height*height));
+    }
+}
+
+class demo{
+    public static void main(String[] args){
+        triangle t1 = new triangle();
+        t1.height=4.0;
+        t1.base = 3.0;
+        t1.findArea();
+        t1.findPerimeter();
+        t1.findHypotenuse();
+    }
+}
