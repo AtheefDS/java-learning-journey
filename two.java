@@ -37,3 +37,20 @@ class cast{
 
     }
 }
+
+class student{
+    String name;
+    int age;
+    student(){
+        name = "Atheef";
+        age = 23;
+    }
+    void display(){
+        System.out.println(name);
+        System.out.println(age);
+    }
+    public static void main(String[] args){
+        student s1 = new student();
+        s1.display();
+    }
+}
