@@ -54,3 +54,23 @@ class student{
         s1.display();
     }
 }
+
+class school{
+    String name ;
+    static String university = "UOM";
+
+    school(String n){
+        name = n ;
+    }
+    void display(){
+        System.out.println(name + " - " + university);
+    }
+    public static void main(String[] args){
+        school s1 = new school("Alighar");
+        school s2 = new school("Azhar");
+        s1.display();
+        s2.display();
+        System.out.println(s1.name);
+        System.out.println(school.university);
+    }
+}
