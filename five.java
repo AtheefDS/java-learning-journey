@@ -18,7 +18,7 @@ public class five {
     }
 }
 
- */
+
 class animal{
     void eat(){
         System.out.println("Animal is eating");
@@ -43,5 +43,37 @@ public class five {
         d.eat();
         d.walk();
         d.bark();
+    }
+}
+
+ */
+
+class animal{
+    void eat(){
+        System.out.println("Animal is eating");
+    }
+}
+
+class cat extends animal{
+    void meow(){
+        System.out.println("cat is meow");
+    }
+}
+
+class dog extends animal{
+    void bark(){
+        System.out.println("dog is barking");
+    }
+}
+
+public class five {
+    public static void main(String[] args){
+        dog d = new dog();
+        d.bark();
+        d.eat();
+
+        cat c = new cat();
+        c.meow();
+        c.eat();
     }
 }
