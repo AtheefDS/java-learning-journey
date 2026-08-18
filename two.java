@@ -144,3 +144,41 @@ class swap{
         System.out.println(y);
     }
 }
+
+class calculator{
+    int num1;
+    int num2;
+    void addition(){
+        System.out.println(num1+num2);
+    }
+    void subtraction(){
+        System.out.println(num1-num2);
+    }
+    void multiplication(){
+        System.out.println(num1*num2);
+    }
+    void division(){
+        System.out.println(num1/num2);
+    }
+    void modulus(){
+        System.out.println(num1%num2);
+    }
+}
+class calculus{
+    public static void main(String[] args){
+        calculator c1 = new calculator();
+        c1.num1 = 12;
+        c1.num2 = 5;
+        c1.addition();
+        c1.modulus();
+        c1.division();
+        c1.multiplication();
+        c1.subtraction();
+
+    }
+
+    }
+
+
+
+
