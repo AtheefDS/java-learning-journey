@@ -27,3 +27,11 @@ class calculator{
         calculator.sayHello();
     }
 }
+
+class call{
+    String name = "Atheef";
+    public static void main(String[] args){
+        call c = new call();
+        System.out.println(c.name);
+    }
+}
