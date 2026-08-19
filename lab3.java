@@ -18,7 +18,7 @@ public class lab3 {
     }
 }
 
- */
+
 
 class Dog{
     String breed;
@@ -93,6 +93,27 @@ public class lab3 {
     }
 }
 
+ */
 
+class Main {
+    final int x = 10;
+    int y = 6;
+    static int t = 20;
 
+    public static void main(String[] args) {
+        Main myObj = new Main();
+
+        // Part 01
+         //myObj.y = 8;
+         //System.out.println(myObj.y);
+
+        // Part 02
+         //myObj.t = 25;
+         //System.out.println(myObj.t);
+
+        // Part 03
+         //myObj.x = 25;
+         System.out.println(myObj.x);
+    }
+}
 
