@@ -30,7 +30,7 @@ class MaxMinGenerator {
 }
 
  */
-
+/*
 import java.util.Scanner;
 
  class StudentGrades {
@@ -78,5 +78,29 @@ import java.util.Scanner;
         System.out.println("Average Marks for Subjects: " + average);
 
         input.close();
+    }
+}
+
+ */
+
+import java.util.Scanner;
+class ArrayExample {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String args[]) {
+        int[] myIntArray = getIntegers(5);
+        printArray(myIntArray);
+    }
+    public static int[] getIntegers(int number) {
+        System.out.println("Please Enter " + number + " integer values");
+        int intArray[] = new int[number];
+        for (int i = 0; i < number; i++) {
+            intArray[i] = scanner.nextInt();
+        }
+        return intArray;
+    }
+    public static void printArray(int[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+            System.out.println(intArray[i]);
+        }
     }
 }
